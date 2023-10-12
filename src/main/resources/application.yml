@@ -1,0 +1,29 @@
+server:
+  port: ${PORT:8080}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+spring:
+  application:
+    name: ${SERVICE_NAME:eureka-proxy}
+  cloud:
+    gateway:
+      routes:
+        - id: proxy-route
+          uri: ${API_URL:}
+          predicates:
+            - Path=/**
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
+    healthcheck:
+      enabled: true
+    register-with-eureka: true
+    fetch-registry: false
+
