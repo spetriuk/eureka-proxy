@@ -8,11 +8,11 @@ Can be used with mock APIs to simulate Eureka client behavior in controlled envi
 
 #### Build and Run the Application
 To build this Spring Boot application, use the following Maven command:
-```bash
+```
 mvn clean package
 ```
 To run your Spring Boot application, use the following Maven command:
-```bash
+```
 java -jar target/eureka-proxy-0.0.1-SNAPSHOT.jar
 ```
 
