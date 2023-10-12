@@ -4,7 +4,7 @@
 This service is a simple Spring Cloud Eureka Client, functions as a proxy for the REST calls to a specified server. 
 Can be used with mock APIs to simulate Eureka client behavior in controlled environments.
 
->Docker image: [spetriuk/eureka-proxy](https://hub.docker.com/repository/docker/spetriuk/eureka-proxy)
+>Docker image: [spetriuk/eureka-proxy](https://hub.docker.com/r/spetriuk/eureka-proxy)
 
 #### Build and Run the Application
 To build this Spring Boot application, use the following Maven command:
